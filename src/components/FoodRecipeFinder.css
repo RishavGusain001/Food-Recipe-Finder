@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/854/972/859/vegetables-rice-still-life-dark-wallpaper-preview.jpg");
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 90%;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+input::placeholder {
+    font-weight: 400;
+    color: #ccc;
+}
+
+.search-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1000; 
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    background: #333333;
+    border-radius: 25px;
+    padding: 5px 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.input {
+    flex-grow: 1;
+    height: 100%;
+    font-size: 1rem;
+    padding-left: 10px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+.btn-icon-content {
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    transition: transform 0.3s ease;
+}
+
+.search-box:hover .search-icon {
+    transform: scale(1.2);
+}
+
+.recipe-result {
+    width: 100%;
+    max-width: 1200px;
+}
+
+#results {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+#results li {
+    list-style: none;
+    margin: 10px;
+    width: 300px;
+    padding: 15px;
+    background: rgba(151, 151, 151, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease;
+}
+
+#results li:hover {
+    transform: scale(1.05);
+}
+
+.recipe-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.recipe-item h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.recipe-link a {
+    color: #ffbb33;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.recipe-link a:hover {
+    color: #ffdd66;
+}
