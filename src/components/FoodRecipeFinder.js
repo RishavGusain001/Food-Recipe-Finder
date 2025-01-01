@@ -59,7 +59,9 @@ const FoodRecipeFinder = () => {
                     <p>Loading ...</p>
                 ) : error ? (
                     <p>{error}</p>
-                ) : (
+                ) :
+                
+                (
                     <div className="recipe-result">
                         <ul id="results">
                             {recipes.map((recipeData, index) => (
